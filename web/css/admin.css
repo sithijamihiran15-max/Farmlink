@@ -1,0 +1,20 @@
+/* Admin dashboard overrides — editable separately from the original FarmLink UI. */
+.admin-main { padding-top: 48px; padding-bottom: 64px; }
+.admin-title h1 { margin: 7px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; }
+.admin-title p { color: #52635a; margin: 0 0 24px; }
+.admin-stats { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; margin-bottom: 28px; }
+.admin-stat { border: 1px solid #dce7dd; background: #fff; border-radius: 16px; padding: 22px; min-width: 0; }
+.admin-stat span { display: block; font-weight: 600; color: #586b60; }
+.admin-stat strong { display: block; font-size: 2.1rem; color: #194f2d; margin-top: 7px; }
+.admin-panel { border: 1px solid #dce7dd; background: #fff; border-radius: 16px; padding: 23px; margin-bottom: 25px; }
+.admin-panel h2 { font-size: 1.35rem; margin: 0 0 15px; }
+.admin-table-wrap { overflow-x: auto; width: 100%; }
+.admin-table { width: 100%; border-collapse: collapse; text-align: left; min-width: 630px; }
+.admin-table th, .admin-table td { padding: 13px 11px; border-bottom: 1px solid #e6ece7; overflow-wrap: anywhere; }
+.admin-table th { background: #f3f8f3; color: #2d5141; font-size: .92rem; }
+.admin-note { font-size: .9rem; color: #63716a; }
+@media (max-width: 860px) { .admin-stats { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 540px) { .admin-main {padding-top:25px;} .admin-stats { grid-template-columns: 1fr; gap: 9px; } .admin-panel {padding: 14px;} }
+
+.admin-delete-btn { color: #8a2230; border-color: #cf9fa7; white-space: nowrap; }
+.admin-delete-btn:hover, .admin-delete-btn:focus-visible { background: #fff0f2; border-color: #ac3345; }

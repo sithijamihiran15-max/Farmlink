@@ -1,0 +1,25 @@
+/* Mobile / media fixes layered over the original, editable Figma-inspired CSS. */
+html{overflow-x:clip}body{overflow-wrap:break-word}
+/* Original save controls were absolutely positioned with no positioned card ancestor. */
+.listing-card{position:relative;min-width:0}
+.listing-card .save-btn{z-index:3;box-shadow:0 3px 12px #00000014}
+.card-photo{min-width:0}.card-info{min-width:0}.card-info h3{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;min-height:2.7em;overflow:hidden}
+.card-location{overflow-wrap:anywhere}.card-price{white-space:nowrap}
+.hero-layout>*{min-width:0}.hero-media img{max-width:100%;object-fit:cover}
+.dash-layout,.dash-main,.dashboard-listings,.detail-layout,.story-grid,.market-layout{min-width:0}
+.dash-card{min-width:0}.dash-table{min-width:680px}.table-scroll,.table-wrapper{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+/* A table inside the dashboard is never allowed to expand the entire viewport. */
+.dash-card:has(.dash-table){overflow-x:auto}
+.inquiry-card{min-width:0}.inquiry-card>div{min-width:0}.inquiry-actions{flex-wrap:wrap}
+.message-thread{max-height:450px;min-height:160px}.bubble{white-space:pre-wrap}
+.edit-preview{max-height:190px;width:auto;max-width:100%;object-fit:contain;border-radius:14px;border:1px solid var(--line);margin:10px 0}
+.ui-error{padding:15px;background:#fff1ee;border:1px solid #efc7be;border-radius:10px;color:#972e21}
+.disabled,[aria-disabled="true"]{pointer-events:none;opacity:.55}
+.field{max-width:100%}.form-grid>*{min-width:0}.form-actions{flex-wrap:wrap}
+.status-pill.accepted{color:#1c6d50;background:#dcf8e7}.status-pill.completed{color:#155b37;background:#c9f3d5}.status-pill.cancelled,.status-pill.declined,.status-pill.inactive{background:#fce2dd;color:#a24136}
+.inquiry-list{display:grid;gap:14px}.inquiry-list .inquiry-card{border-top:1px solid var(--line);padding-top:17px}
+.inquiry-list .inquiry-card:first-child{border-top:0}
+@media(max-width:1050px){.hero-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.hero h1{font-size:clamp(2.4rem,4vw,3.4rem)}.detail-layout{gap:30px}.nav-links{gap:12px}}
+@media(max-width:800px){.hero-layout{grid-template-columns:1fr}.hero-media{width:100%;margin-bottom:0}.hero-media img{border-radius:24px 24px 0 0;min-height:0;height:clamp(230px,43vw,360px)}.hero-content{padding-right:0}.dash-sidebar{max-width:100%;scrollbar-width:thin}.dash-link{flex:none}.inquiry-card{align-items:start}.static-mobile-menu nav{max-height:70vh;overflow-y:auto}}
+@media(max-width:530px){.site-header .account-chip{max-width:150px}.benefits-list>div{justify-content:flex-start}.detail-actions{display:flex;flex-wrap:wrap}.detail-actions>.btn{flex:1 1 160px}.detail-pricing{display:flex;gap:12px;flex-wrap:wrap}.inquiry-card{grid-template-columns:56px minmax(0,1fr)}.inquiry-card>img{width:56px;height:56px}.inquiry-actions{grid-column:1/-1}.card-photo{height:200px}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stat-box{min-width:0}.footer-bottom{justify-content:flex-start}}
+@media(max-width:360px){.shell{width:calc(100% - 24px)}.brand{font-size:24px}.hero h1{font-size:2.13rem}.hero-actions{align-items:stretch;width:100%}.hero-actions>.btn{flex:1 1 auto}.stats-grid{grid-template-columns:1fr}}

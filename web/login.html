@@ -1,0 +1,135 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="FarmLink — Login. Static HTML and CSS UI template."
+      name="description"
+    />
+    <title>FarmLink — Login</title>
+    <link href="assets/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=DM+Sans:wght@400;500;600;700;800&amp;family=Jost:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/static.css" rel="stylesheet" />
+    <link href="css/responsive-fixes.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-wrap shell">
+        <a aria-label="FarmLink home" class="brand" href="index.html"
+          >FARM<span>LINK</span
+          ><span aria-hidden="true" class="brand-leaf">✦</span></a
+        >
+        <nav aria-label="Main navigation" class="nav-links static-desktop-nav">
+          <a class="" href="index.html">Home</a
+          ><a class="" href="explore.html">Explore</a
+          ><a class="" href="explore.html">Shop</a
+          ><a class="" href="how-it-works.html">How it works</a>
+          <div class="auth-nav">
+            <a class="btn btn-outline btn-small" href="register-farmer.html"
+              >Sign up</a
+            ><a class="btn btn-primary btn-small" href="login.html">Log in</a>
+          </div>
+        </nav>
+        <details class="static-mobile-menu">
+          <summary aria-label="Open site navigation">
+            ☰ <span>Menu</span>
+          </summary>
+          <nav aria-label="Mobile navigation">
+            <a href="index.html">Home</a><a href="explore.html">Explore</a
+            ><a href="explore.html">Shop</a
+            ><a href="how-it-works.html">How it works</a
+            ><a href="register-farmer.html">Join as farmer</a
+            ><a href="register-buyer.html">Join as buyer</a
+            ><a href="login.html">Log in</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <div id="app">
+        <section class="login-stage">
+          <div class="login-info">
+            <span class="eyebrow" style="color: #d0ff9d"
+              >Welcome back to FarmLink</span>
+            <h1>Good things<br />grow together.</h1>
+            <p style="color: #d6f3d6">Sign in and grow more connections.</p>
+          </div>
+          <div class="login-card">
+            <span class="eyebrow">Nice to see you again</span>
+            <h2>Welcome back.</h2>
+            <p class="muted">Log in to your FarmLink account</p>
+            <form action="#" id="login-form" method="post">
+              <label class="form-label" for="login-nic">NIC number</label
+              ><input
+                autocomplete="username"
+                id="login-nic"
+                name="nic"
+                placeholder="Your NIC number"
+                required=""
+              /><label class="form-label" for="login-password">Password</label
+              ><input
+                autocomplete="current-password"
+                id="login-password"
+                name="password"
+                placeholder="Your password"
+                required=""
+                type="password"
+              />
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">
+                  Log in
+                  <span class="icon-inline"
+                    ><svg aria-hidden="true" viewbox="0 0 24 24">
+                      <path d="M5 12h14m-6-6 6 6-6 6"></path></svg
+                  ></span></button
+                ><a class="btn btn-outline" href="index.html">Cancel</a>
+              </div>
+            </form>
+            <div class="auth-extra">
+              New to FarmLink?
+              <a href="register-farmer.html">Join as farmer</a> or
+              <a href="register-buyer.html">buyer</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-main">
+        <div>
+          <a class="brand footer-brand" href="index.html"
+            >FARM<span>LINK</span></a
+          >
+          <p>
+            From local farms to local tables.<br />Better connections grow
+            better futures.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="explore.html">Explore harvests</a
+          ><a href="how-it-works.html">How it works</a
+          ><a href="register-farmer.html">Become a farmer seller</a
+          ><a href="register-buyer.html">Join as a buyer</a>
+        </div>
+        <div class="footer-note">
+          <span class="footer-circle">✳</span
+          ><b>Good food starts with a good connection.</b
+          ><small>Made for the farming community of Sri Lanka.</small>
+        </div>
+      </div>
+      <div class="footer-bottom shell">
+        <span>© 2026 FarmLink. All rights reserved.</span
+        ><span>Fresh from the farm <span aria-hidden="true">🌱</span></span>
+      </div>
+    </footer>
+    <script defer="True" src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+
+/* Additional rules for a completely JavaScript-free, standalone multi-page UI. */
+.static-mobile-menu{display:none;position:relative;margin-left:auto;z-index:50}
+.static-mobile-menu summary{font-weight:800;list-style:none;cursor:pointer;color:#194d31;padding:9px 12px;border:1px solid #91c995;border-radius:12px;background:#e5ffdd}
+.static-mobile-menu summary::-webkit-details-marker{display:none}
+.static-mobile-menu nav{position:absolute;right:0;top:calc(100% + 10px);width:min(84vw,290px);padding:12px;background:#f2ffeb;border:1px solid #a9d8a1;box-shadow:0 16px 34px #183a2529;border-radius:15px;display:flex;flex-direction:column;z-index:90}
+.static-mobile-menu nav a{padding:10px 14px;font-weight:800;color:#1b5230;border-radius:8px}
+.static-mobile-menu nav a:hover,.static-mobile-menu nav a:focus{background:#d6f4d2}
+.static-desktop-nav{display:flex}
+.site-header{position:relative;z-index:30}
+.no-js-note{font-size:12px;color:#667b6f;margin:0}
+.ui-preview-hint{display:inline-flex;gap:6px;align-items:center;margin-top:8px;padding:7px 10px;border-radius:10px;background:#eaf6e7;color:#3c6847;font-weight:700;font-size:12px}
+.listing-card .card-photo img,.mini-product img,.table-product img{object-fit:cover}
+@media(max-width:800px){.static-desktop-nav{display:none!important}.static-mobile-menu{display:block}.nav-wrap{height:70px}}
+@media(max-width:420px){.static-mobile-menu summary span{display:none}}
+/* Standalone UI sitemap page */
+.sitemap-hero{padding:72px 0 56px;background:#194d31;color:white}
+.sitemap-hero h1{font-family:Georgia,serif;letter-spacing:-.03em;font-size:clamp(2.5rem,5vw,4rem)}
+.sitemap-layout{padding:48px 0 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px}
+.sitemap-section{background:white;border:1px solid #d6e6d5;border-radius:20px;padding:28px;box-shadow:0 12px 30px #183a2511}
+.sitemap-section h2{font-size:24px;margin:0 0 18px}
+.sitemap-section a{display:flex;padding:11px 0;border-bottom:1px solid #eff3ed;color:#247a43;font-weight:700}
+.sitemap-section a::after{content:'↗';margin-left:auto}
+.sitemap-section a:hover{color:#17432c}
